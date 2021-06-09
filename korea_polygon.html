@@ -46,7 +46,44 @@
                     }
                 });
             });
-        
+            $.getJSON("Busan_JeonBuk.geojson", function (geojson) {
+                var data = geojson.features;
+                var name = '';            //행정구 명
+                var code = '';
+
+                $.each(data, function (index, val) {
+                    name = val.properties.CTP_KOR_NM;
+                    code = val.properties.CTPRVN_CD;
+
+                    if (val.geometry.type == "MultiPolygon") {
+                        displayArea(name, code, val.geometry.coordinates, true);
+
+                    }
+                    else {
+                        displayArea(name, code, val.geometry.coordinates, false);
+
+                    }
+                });
+            });
+            $.getJSON("JeonBuk.geojson", function (geojson) {
+                var data = geojson.features;
+                var name = '';            //행정구 명
+                var code = '';
+
+                $.each(data, function (index, val) {
+                    name = val.properties.CTP_KOR_NM;
+                    code = val.properties.CTPRVN_CD;
+
+                    if (val.geometry.type == "MultiPolygon") {
+                        displayArea(name, code, val.geometry.coordinates, true);
+
+                    }
+                    else {
+                        displayArea(name, code, val.geometry.coordinates, false);
+
+                    }
+                });
+            });
 
         function makePolygon(coordinates) {
             var polygonPath = [];
