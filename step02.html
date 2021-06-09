@@ -27,10 +27,10 @@
                     var allRow = data;
                     var singleRows = allRow.split("\r\n");
                     var positions = [];
-                    var loc =  singleRows[0].split(",")
-                    console.log( loc[19])
-                    
-                    console.log( singleRows[0].split(","))
+                    var loc = singleRows[0].split(",")
+                    console.log(loc[19])
+
+                    console.log(singleRows[0].split(","))
                     for (var singleRow = 1; singleRow < 1772; singleRow++) { //고쳐야하는 곳 
                         var collapse = singleRows[singleRow].split(",");
                         positions.push({
@@ -47,13 +47,11 @@
 
                     var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
                         mapOption = {
-                            center: new kakao.maps.LatLng(37.450701, 127.570667), // 지도의 중심좌표
-                            level: 10 // 지도의 확대 레벨
+                            center: new kakao.maps.LatLng(36.2683, 127.6358), // 지도의 중심좌표 
+                            level: 10 // 지도의 확대 레벨 
                         };
 
                     var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-
-
 
                     for (var i = 0; i < positions.length; i++) {
                         // 마커를 생성합니다
