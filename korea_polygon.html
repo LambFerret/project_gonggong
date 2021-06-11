@@ -29,24 +29,31 @@
             map = _map;
         }
 
+        $.ajax({
+            url: 'korea_map/final_korea_shape.json',
+            type: 'GET',
+            dataType: 'json',
+            error: function () {
+                alert('error!')
+            },
+            success: function (json) {
+                var data = json.features;
+                var name = '';            //행정구 명
+                var code = '';
+                $.each(data, function (index, val) {
+                    name = val.properties.CTP_KOR_NM;
+                    code = val.properties.CTPRVN_CD;
 
-        $.getJSON("korea_map/final_korea_shape.json", function (geojson) {
-            var data = geojson.features;
-            var name = '';            //행정구 명
-            var code = '';
-            $.each(data, function (index, val) {
-                name = val.properties.CTP_KOR_NM;
-                code = val.properties.CTPRVN_CD;
+                    if (val.geometry.type == "MultiPolygon") {
+                        displayArea(name, code, val.geometry.coordinates, true);
 
-                if (val.geometry.type == "MultiPolygon") {
-                    displayArea(name, code, val.geometry.coordinates, true);
+                    }
+                    else {
+                        displayArea(name, code, val.geometry.coordinates, false);
 
-                }
-                else {
-                    displayArea(name, code, val.geometry.coordinates, false);
-
-                }
-            });
+                    }
+                });
+            }
         });
 
 
@@ -165,7 +172,7 @@
             kakao.maps.event.addListener(polygon, 'click', function () {
                 location.href = "http://blog.naver.com/" + name;
 
-               
+
 
 
 

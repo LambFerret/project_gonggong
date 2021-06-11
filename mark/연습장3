@@ -1,0 +1,68 @@
+  function setgolfMarker(map) {
+  function setbasketMarker(map) {
+  function setmultiUseMarker(map) {
+                            for (var i = 0; i < multiUseMarkers.length; i++) {
+                                multiUseMarkers[i].setMap(map);
+                            }
+                        }
+  function setbadminMarker(map) {
+                            for (var i = 0; i < badminMarkers.length; i++) {
+                                badminMarkers[i].setMap(map);
+                            }
+                        }
+  function setbaseballMarker(map) {
+                            for (var i = 0; i < baseballMarkers.length; i++) {
+                                baseballMarkers[i].setMap(map);
+                            }
+                        }
+  function setfootballMarker(map) {
+                            for (var i = 0; i < footballMarkers.length; i++) {
+                                footballMarkers[i].setMap(map);
+                            }
+                        }
+  function setgymMarker(map) {
+                            for (var i = 0; i < gymMarkers.length; i++) {
+                                gymMarkers[i].setMap(map);
+                            }
+                        }
+  function setsoccerMarker(map) {
+                            for (var i = 0; i < soccerMarkers.length; i++) {
+                                soccerMarkers[i].setMap(map);
+                            }
+                        }
+  function setcampingMarker(map) {
+                            for (var i = 0; i < campingMarkers.length; i++) {
+                                campingMarkers[i].setMap(map);
+                            }
+                        }
+  function settennisMarker(map) {
+                            for (var i = 0; i < tennisMarkers.length; i++) {
+                                tennisMarkers[i].setMap(map);
+                            }
+                        }
+  function setfootsalMarker(map) {
+                            for (var i = 0; i < footsalMarkers.length; i++) {
+                                footsalMarkers[i].setMap(map);
+                            }
+                        }
+
+  function setCoffeeMarker(map) {
+                            for (var i = 0; i < coffeeMarkers.length; i++) {
+                                coffeeMarkers[i].setMap(map);
+                            }
+                        }
+
+  .category .ico_basket {
+            background-position: -10px -70px;
+        }
+    golf  
+         basket  
+         multiUse  
+         badmin  
+         baseball  
+         football  
+         gym  
+         soccer  
+         camping  
+         tennis  
+         footsal  

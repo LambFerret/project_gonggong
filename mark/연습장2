@@ -1,0 +1,59 @@
+.category .ico_all {
+    width: 22px; height: 26px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+.category .ico_badmin {
+    width: 22px; height: 26px;
+    background: url('css_sprites.png') -52px -10px;
+}
+
+.category .ico_baseball {
+    width: 22px; height: 26px;
+    background: url('css_sprites.png') -94px -10px;
+}
+
+.category .ico_basket {
+    width: 22px; height: 26px;
+    background: url('css_sprites.png') -10px -56px;
+}
+
+.category .ico_camping {
+    width: 22px; height: 26px;
+    background: url('css_sprites.png') -52px -56px;
+}
+
+.category .ico_football {
+    width: 22px; height: 26px;
+    background: url('css_sprites.png') -94px -56px;
+}
+
+.category .ico_futsal {
+    width: 22px; height: 26px;
+    background: url('css_sprites.png') -136px -10px;
+}
+
+.category .ico_golf {
+    width: 22px; height: 26px;
+    background: url('css_sprites.png') -136px -56px;
+}
+
+.category .ico_gym {
+    width: 22px; height: 26px;
+    background: url('css_sprites.png') -10px -102px;
+}
+
+.category .ico_multiUse {
+    width: 22px; height: 26px;
+    background: url('css_sprites.png') -52px -102px;
+}
+
+.category .ico_soccer {
+    width: 22px; height: 26px;
+    background: url('css_sprites.png') -94px -102px;
+}
+
+.category .ico_tennis {
+    width: 22px; height: 26px;
+    background: url('css_sprites.png') -136px -102px;
+}
